@@ -6,7 +6,7 @@ public class PythonGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = Integer.parseInt(scanner.nextLine());
-        String [] commands = scanner.nextLine().split(",\\s+");
+        String[] commands = scanner.nextLine().split(",\\s+");
 
         char[][] matrix = new char[n][n];
         // fill матрицата
@@ -96,3 +96,33 @@ public class PythonGame {
 
     }
 }
+
+    /*
+            Input examples :                                       expected output:
+
+              5                                                     You win! Final python length is 3
+              up, right, right, right, up
+              * * e * *
+              * * * f *
+              * f * * *
+              s * * * *
+              * * e * *
+
+              4                                                     You lose! Killed by an enemy!
+              right, right, right, right, right, down, right
+              * s * *
+              * * e *
+              * f * f
+              * * * f
+
+              6                                                         You lose! There is still 1 food to be eaten.
+              down, left, left, down, right, right, right, right, right
+              * * * * s *
+              * e f * * *
+              f * * * * *
+              * * * f e *
+              * e * * * *
+              * * * * * *
+
+        */
+
